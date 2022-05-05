@@ -33,23 +33,7 @@ public class ModelGallery {
     private byte[] image;
     
   
-	public ModelGallery() {}
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-		public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 
 
@@ -69,6 +53,23 @@ public class ModelGallery {
 		this.image = image;
 	}
 
+	public ModelGallery() {}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 	@Override
 	public String toString() {
 		return "ImgGallery [id=" + id + ", name=" + name + ", height=" + height + ", image=" + Arrays.toString(image)
