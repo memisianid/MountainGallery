@@ -1,0 +1,84 @@
+html,
+body {
+    margin: 0;
+    font-size: 100%;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5, h6 {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+}
+
+
+
+.main-top-w3l {
+    background: black;
+}
+
+
+
+
+.header-right ul li {
+    display: inline-block;
+    width: 19%;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+}
+
+.header-right ul li i {
+    font-size: 15px;
+}
+
+
+.modal-title {
+    font-size: 30px;
+    color: black;
+}
+
+
+
+label.col-form-label {
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #000;
+}
+
+p.dont-do a {
+    color: #F45C5D;
+}
+
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 14px;
+}
+
+
+
+
+.right-w3l input[type="submit"] {
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    background: black;
+    color: #fff;
+    margin: 2vw 0 1.5vw;
+
+}
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PixelTrice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Image Gallery</h1>
+</div>
+<br><br>
+
+<table id="example" class="table  table-bordered text-center">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Height</th>
+
+        <!-- table that shows the images -->
+    </tr>
+    </thead>
+    <tbody th:with="count=0">
+    <tr th:each = "gallery, hh : ${images}">
+        <td th:with="count=${count + 1}" th:text="${count}"></td>
+        <td th:text="${gallery.name}"></td>
+        <td><img th:src="@{${'/image/display/'+ gallery.id}}"
+                 class="card img-fluid" style="width:300px" alt=""/></td>
+
+        <td th:text="${gallery.price}"></td>
+
+    </tr>
+    </tbody>
+</table>
+<!-- Button to go back to index.html -->
+
+<a href="/home" class="btn btn-info text-right">Go Home</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+
+</body>
+</html>
